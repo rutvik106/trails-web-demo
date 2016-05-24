@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript" src="strophejs/strophe.js"></script>
+
+	<title>Trails</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:600px) and (max-width:1000px)" href="style/style_600.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:300px) and (max-width:599px)" href="style/style_300.css">
+
+
+	<link rel="stylesheet" type="text/css" href="style/jquery-ui.css">
+
+	<script src="jquery/jquery-1.11.3.min.js"></script>
+
+	<script src="jquery/jquery-ui.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="velocity/velocity.min.js"></script>
+
+	<script src="velocity/velocity.ui.js"></script>
+
+	<script src="vfx/vfx.js"></script>
+
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+	<div id="background"></div>
+
+	<ul id="options-menu-dropdown" class="options-menu-dropdown-hide">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li onClick="XMPP.disconnect();">Logout</li>
+	</ul>
+
+	<div id="my-map-wrapper" class="container-fluid">
+
+		<div id="top-bar">
+
+			<div id="user-top-bar-area">
+
+				<img id="user-profile-pic-ic" src="img/user.png"></img>
+				<h2 id="lbl-username"></h2>
+				<div id="user-notification-ic" class="notification"></div>
+
+			</div>
+
+			<div class="headerDivider"></div>
+
+			<div id="friend-top-bar-area">
+
+				<img id="friend-profile-pic-ic" src="img/user.png"></img>
+				<h2 id="lbl-friend-name"></h2>
+
+			</div>
+
+			<!--<div id="options-menu">
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			</div>-->
+
+			<div id="option-menu-wrapper">
+
+				<div id="options-menu" onClick="toggleOptionsMenu();" class="glyphicon glyphicon-option-vertical">
+					
+				</div>
+
+			</div>
+
+
+
+			<!--<img id="ic-status"></img>-->
+
+
+		</div>
+
+		<div id="side-bar">
+
+
+
+
+
+
+
+			<div id="friend-list-view-wrapper">
+				<ul id="friend-list-view">
+
+
+				</ul>
+			</div>
+
+
+
+			<div id="request-list-view-wrapper">
+
+				<ul id="request-list-view">
+
+					
+
+				</ul>
+
+			</div>
+
+
+
+		</div>
+
+
+		<div id="my-map-container">
+
+			<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+			<div id="map-canvas">
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div id="login-page" class="container-fluid">
+
+		<div id="main-content">
+
+			<h3 id="title">Trailsss...</h3>		
+
+
+			<div id="about-box" class="jumbotron">				
+
+
+				<div id="ic-trails"></div>
+				<p>Trails is an Advanced Tracking App for Android providing Advanced Features like Live Tracking, Offline Tracking, Tracking a Friend, Find Lost Phone. It's free and always will be.</p>
+				<a href="#" >Developed By Rutvik Mehta</a>
+
+
+			</div>		
+
+			<div id="login-box" class="jumbotron">				
+
+
+				<input id="userName" type="text" style="margin-bottom:15px; margin-top:25px;" placeholder="Username" class="form-control" autofocus/>
+
+				<input id="password" type="password" style="margin-bottom:25px;" placeholder="Password" class="form-control"/>
+
+				<a href="#" onClick="showAbout();" style="
+				margin: 10px 0px 0px 5px;
+				padding: 0;
+				font-size: 13px;
+				float: left;
+				color: #ccc;
+				">What is Trails?</a>
+
+				<button id="btn-login" class="btn btn-success" onClick="login();" type="submit" aria-hidden="true">Login&nbsp;<span class="glyphicon glyphicon-log-in"></span></button>
+
+
+			</div>
+
+			<div id="missing-credentials" class="alert alert-danger" role="alert">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				<span class="sr-only">Error:</span>
+				Enter a valid user name and password
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
+
+
